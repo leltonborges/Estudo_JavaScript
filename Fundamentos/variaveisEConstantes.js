@@ -12,4 +12,5 @@ b = 400
 console.log(a, b)
 
 const c = 5
-console.log(c);
+// c = 50
+console.log(c)
