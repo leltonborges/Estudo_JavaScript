@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Binding</title>
+    <link rel="stylesheet" href="/css/estilo.css">
+    <script src="/js/vue.min.js"></script>
+</head>
+
+<body class="exercicio">
+    <div id="app">
+        <p>{{link}}</p>
+        <p><a href="{{link}}">Link "errado"</a></p>
+        <p><a v-bind:href="link" target="_blank">Link "Certo"</a></p>
+        <p><a :href="link" target="_blank">Link "certa: Opção 2"</a></p>
+
+        <p>
+            <input type="text" v-model="name" >
+            <span>{{name}}</span>
+        </p>
+    </div>
+
+    <script>
+        new Vue({
+            el: "#app",
+            data: {
+                name: "Carlos",
+                link: "https://youtube.com"
+            },
+            watch: {
+                name(newValue){
+                    console.log(newValue.toUpperCase())
+                }
+            }
+        })    
+    </script>
+</body>
+
+</html>

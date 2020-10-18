@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>If & For</title>
+    <link rel="stylesheet" href="/css/estilo.css">
+    <script src="/js/vue.min.js"></script>
+</head>
+
+<body class="exercicio">
+
+    <div id="app">
+        <!-- <p v-for="(aluno, i) in alunos">
+            {{i+1}} {{aluno.name}} - {{aluno.nota}}
+            <span v-if="aluno.nota >= 9"> Quado de Honra</span>
+        </p> -->
+
+        <table>
+            <thead>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Nota</th>
+                <th>Situação</th>
+            </thead>
+            <tbody  >
+                <tr v-for="(aluno, i) in alunos" id="my">
+                    <td>{{i+1}}</td>
+                    <td>{{aluno.name}}</td>
+                    <td>{{aluno.nota}}</td>
+                    <td>
+                        <span v-if="aluno.nota >= 9"> Quado de Honra</span>
+                        <span v-else-if="aluno.nota >= 7"> Aprovado</span>
+                        <span v-else-if="aluno.nota > 3"> Recuperação</span>
+                        <span v-else> Reprovado</span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <ul style="list-style: none;">
+            v-show
+            <li v-for="n in 8">
+                <span v-show="n >=5">{{n}}</span>
+            </li>
+        </ul>
+    </div>
+
+    <script>
+        new Vue({
+            el: "#app",
+            data: {
+                alunos: [
+                    { name: "Leo", nota: 8.1 },
+                    { name: "Bia", nota: 9.4 },
+                    { name: "Bob", nota: 4.8 },
+                    { name: "Maria", nota: 9.0 },
+                    { name: "João", nota: 7.2 },
+                    { name: "Marlos", nota: 2.9 },
+                    { name: "Ana", nota: 9.2 },
+                ]
+            }
+        })
+    </script>
+</body>
+
+</html>
