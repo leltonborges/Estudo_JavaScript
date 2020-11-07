@@ -1,0 +1,17 @@
+.side-nav {
+    background-color: #3d3c3c;
+    width: 200px;
+}
+
+.side-nav  a{
+    color: azure;
+}
+
+.side-nav i {
+    padding-right: 10px;
+}
+
+.content {
+    padding: 16px;
+    background-color: rgb(133, 131, 131);
+}

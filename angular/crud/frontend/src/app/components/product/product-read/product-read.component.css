@@ -1,0 +1,29 @@
+table {
+    width: 100%;
+}
+
+tr[mat-row]:hover{
+    background-color: rgba(56, 55, 55, 0.856);
+}
+
+i.edit {
+    margin-right: 5px;
+    color: #b6993b;
+    padding: 10px 5px;
+}
+
+i.edit:hover{
+    color:#ffc401;
+    background-color: rgb(105, 102, 102);
+}
+
+i.delete {
+    padding: 10px 5px;
+    color: #e9818c;
+}
+
+i.delete:hover {
+    background-color: rgb(105, 102, 102);
+    color: #d65b67;
+    cursor: default;
+}

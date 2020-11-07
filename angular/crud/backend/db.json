@@ -1,0 +1,29 @@
+{
+  "products": [
+    {
+      "id": 2,
+      "name": "Resma A4",
+      "price": 40.75
+    },
+    {
+      "id": 3,
+      "name": "Notebook Mac Pro",
+      "price": 12684.65
+    },
+    {
+      "id": 4,
+      "name": "Celular S10",
+      "price": 2549.99
+    },
+    {
+      "id": 5,
+      "name": "Monitor 27º",
+      "price": 1670.5
+    },
+    {
+      "price": 1499.99,
+      "name": "Armario",
+      "id": 6
+    }
+  ]
+}
